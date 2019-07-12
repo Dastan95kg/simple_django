@@ -18,8 +18,8 @@
     <div class="container">
         
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="{% url 'home' %}">To-Do List</a>
+    <nav class="navbar navbar-expand-lg navbar- bg-dark">
+        <a class="navbar-brand" href="{% url 'home' %}" style="color: rgb(0, 255, 0)">To-Do List</a>
         
         
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +29,7 @@
         <form class="form-inline my-2 my-lg-0" method="POST">
             {% csrf_token %}    
             <input class="form-control mr-sm-2" type="search" placeholder="Что нужно сделать?" aria-label="Search" name="item">
-            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit"><font size="+2">+</font></button>
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit" style="color: rgb(0, 255, 0)" style="background-color: grey"><font size="+2">+</font></button>
             
           </form>
         </div>

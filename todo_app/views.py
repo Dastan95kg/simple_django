@@ -10,7 +10,7 @@ def home(request):
         if form.is_valid():
             form.save()
             all_items = List.objects.all()
-            messages.success(request, ('Item Has Been Added To List!'))
+            messages.success(request, ('Объект добавлен в список дел!'))
             return render(request, 'home.html', {'all_items': all_items})
 
     else:
@@ -20,7 +20,7 @@ def home(request):
 def delete(request, list_id):
     item = List.objects.get(pk=list_id)
     item.delete()
-    messages.success(request, ('Item Has Been Deleted!'))
+    messages.success(request, ('Объект удален из списка дел!'))
     return redirect('home')
 
 def cross_off(request, list_id):
@@ -43,7 +43,7 @@ def edit(request, list_id):
 
         if form.is_valid():
             form.save()
-            messages.success(request, ('Item Has Been Edited!'))
+            messages.success(request, ('Объект списка дел изменен!'))
             return redirect('home')
 
     else:

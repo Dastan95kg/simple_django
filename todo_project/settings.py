@@ -13,7 +13,7 @@ SECRET_KEY = 'wr(#)8tclpuh$0r%)dq!^8*%k#-#3p3xz1wl(&3ogskgtp$kk_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'themakers.ml', '138.68.107.123']
 
 
 # Application definition

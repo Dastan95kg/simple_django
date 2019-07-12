@@ -19,13 +19,13 @@
         {% if things.completed %}
             <tr class="table-secondary">
                 <td class="striker"><a href="{% url 'edit' things.id %}">{{ things.item }}</a></td>
-                <td><center><a href="{% url 'uncross' things.id %}">Uncross</center></td>
-                <td><center><a href="{% url 'delete' things.id %}">Delete</a></center></td>
+                <td><center><a href="{% url 'uncross' things.id %}">Не сделано</center></td>
+                <td><center><a href="{% url 'delete' things.id %}">Удалить</a></center></td>
             </tr>
         {% else %}    
             <tr>
                 <td><a href="{% url 'edit' things.id %}">{{ things.item }}</a></td>
-                <td><center><a href="{% url 'cross_off' things.id %}">Вычеркнуть</center></td>
+                <td><center><a href="{% url 'cross_off' things.id %}">Сделано</center></td>
                 <td><center><a href="{% url 'delete' things.id %}">Удалить</a></center></td>
             </tr>
         {% endif %}
